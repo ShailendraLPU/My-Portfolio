@@ -1,0 +1,216 @@
+
+*
+{
+  box-sizing: border-box ;
+ 
+  background-color: #14213d;
+}
+
+
+nav
+{
+    font-size: 2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+nav ul
+{
+    margin-right: 2%;
+    display: flex; 
+    list-style: none; 
+}
+
+
+nav ul li{
+    margin: 8px;
+    color: white;
+    display: flex;
+}
+
+
+nav ul li:hover
+{
+    transform: scale(1.2);
+    border: 2.5px solid #e76f51;
+    box-shadow:  0px 2px 1em 0em #e76f51;
+}
+
+
+nav ul li a{
+    color: white;
+}
+
+
+ section,footer
+ {
+     color: white;
+     margin-right: 0px;
+     margin-left: 0px;
+     padding: 0px auto;
+ }
+
+
+section figure{
+      position: relative;
+      border-radius: 50%;
+      width: 35%;
+      margin: 1% auto;
+     
+     
+}
+
+
+section figure .img-change{
+    border-radius: 50%;
+    width: 100%;
+    margin-bottom: -40%;
+    animation: image-style ease-out 4s 4 backwards normal ;
+    
+}
+
+
+@keyframes image-style
+{
+    from{
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+       
+    } 
+}
+
+
+section figcaption
+{
+    color: white;
+    text-align: center;
+    position: relative;
+    background: transparent;
+    font-family: 'Redressed', cursive;
+    font-size: 2em;
+    animation: slidein ease-out 4s 4 backwards reverse;
+    
+}
+
+
+@keyframes slidein
+{
+    from
+    {
+        transform: scale(0);
+    }
+    to 
+    {
+        transform: scale(1);
+       
+    }
+}
+
+strong{
+    color: white;
+    background: transparent;
+}
+section:nth-of-type(2)
+
+{
+    color: white ;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+ul 
+{
+    list-style: none;
+}
+
+
+section fieldset a:hover,footer fieldset a:hover
+{
+    display: inline-block;
+    transform: scale(1.1);
+    color: #e76f51;  
+}
+
+
+section ul li h3:hover
+{
+   
+   color: #e76f51;
+}
+
+
+hr {
+    overflow: visible; 
+    height: 30px;
+    border-style: solid;
+    border-color: #e76f51;
+    border-width: 2px 0 0 0;
+    border-radius: 20px;
+    margin-top: 12%;
+}
+hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #e76f51;
+    border-width: 0 0 2px 0;
+    border-radius: 20px;
+}
+
+
+footer li:nth-of-type(1)::before
+{
+    font-family: FontAwesome;
+    content: "\f0e1";
+}
+
+
+footer li:nth-of-type(2)::before
+{
+    font-family: FontAwesome;
+    content: "\f09b";
+}
+
+
+footer li:nth-of-type(3)::before
+{
+    font-family: FontAwesome;
+    content: "\f674";
+}
+
+
+fieldset
+{
+    border-color: #e76f51;
+}
+
+fieldset:hover{
+    display: block;
+    box-shadow:  0px 2px 1em 0em #0496ff;
+}
+
+@media screen and (max-width:600px)
+{
+    nav ul 
+    {
+      flex-direction: column;
+    }
+
+    section figure 
+     {
+
+       width: 40%
+
+     }
+}
